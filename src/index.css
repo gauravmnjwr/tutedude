@@ -1,13 +1,430 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 73px;
+}
+
+.main-navbar img {
+  cursor: pointer;
+}
+
+.main-navbar > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  font-size: 18px;
+  color: #800080;
+}
+
+.main-navbar > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  cursor: pointer;
+}
+.main-navbar > div > div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation-main {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100 !important;
+}
+
+.navigation-main span {
+  margin-left: 22%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.refer-main {
+  padding: 40px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+.refer-main > div {
+  width: 70%;
+}
+
+.refer-earn {
+  height: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  column-gap: 0px;
+}
+
+.refer-info {
+  height: 60%;
+}
+
+.refer-earning {
+  height: 188px;
+  width: 37%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 1px;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1px #fff;
+  box-shadow: 0 0 180px #c6c6c6;
+  z-index: 10;
+}
+
+.ref-code {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ref-code2 {
+  word-wrap: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10%;
+  font-size: 15px;
+  font-weight: 500;
+  color: #800080;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #ff864c, #800080) border-box;
+  border-radius: 20px;
+  border: 2px solid transparent;
+}
+
+.ref-code2 span {
+  padding-bottom: 5px;
+  align-self: center;
+}
+.ref-code1 {
+  font-size: calc(14px + 0.7vw);
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: #800080;
+}
+
+.refer-earning > div {
+  width: 25%;
+  height: 30%;
+  min-width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.refer-earning button {
+  height: 40px;
+  width: 50%;
+  border-radius: 20px;
+  border: 0;
+  background-color: #c6c6c6;
+  color: white;
+  font-size: 16px;
+  background-color: #800080;
+  cursor: pointer;
+}
+
+.earning-tab1 {
+  font-size: clamp(0.6rem, 1vw, 1rem);
+  color: #800080;
+  font-weight: 600;
+}
+
+.earning-tab2 {
+  font-size: 24px;
+  font-size: clamp(1.2rem, 1.2vw, 1.5rem);
+
+  font-weight: 600;
+}
+
+.refer-info {
+  width: 58% !important;
+}
+.how-it-works {
+  font-size: 24px;
+  font-weight: 600;
+  color: #800080;
+}
+
+.refer-instructions {
+  height: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  column-gap: 10px;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.refer-instructions > div {
+  height: 30%;
+  width: 48%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  column-gap: 10px;
+}
+
+.instruction-img {
+  height: 60%;
+  width: 15%;
+  margin-left: 10px;
+  background-color: #d9d9d940;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instruction-info {
+  width: 70%;
+}
+
+.friends-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.friends-page > div {
+  width: 58%;
+}
+
+.friends-page > div > div {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shared-code {
+  height: 50px;
+  width: 153px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #d9d9d9;
+  font-weight: 600;
+}
+
+.shared-balance {
+  height: 85px;
+  width: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 3px gray;
+}
+
+.friends-page > div > span,
+.enrolled > div > span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #800080;
+}
+
+.enrolled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.enrolled > div {
+  width: 58%;
+  height: 100px;
+}
+
+.carousel {
+  margin-top: 30px;
+
+  display: flex;
+  column-gap: 20px;
+}
+
+.carousel > div {
+  height: 100%;
+  width: 33.333333333333%;
+  min-width: 300px;
+  border-radius: 15px;
+  background: linear-gradient(
+    0deg,
+    hsla(19, 100%, 65%, 1) 10%,
+    hsla(300, 100%, 25%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    0deg,
+    hsla(19, 100%, 65%, 1) 10%,
+    hsla(300, 100%, 25%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    0deg,
+    hsla(19, 100%, 65%, 1) 10%,
+    hsla(300, 100%, 25%, 1) 100%
+  );
+}
+
+.app {
+  height: 160vh;
+}
+
+.carousel > div > div {
+  margin: 15px 15px 5px 15px;
+  color: white;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 77%;
+}
+
+.courses span {
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.carousel > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.friends-amount-refer span {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.ref-link {
+  width: 58%;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+span a {
+  text-decoration: none;
+}
+
+.refer-info > div {
+  margin-bottom: 30px;
+}
+.ref-code1 {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+  }
+  .carousel {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .friends-page {
+    column-gap: 10px;
+    width: 100%;
+  }
+  .shared-balance {
+    height: 70px;
+    width: 120px;
+  }
+  .shared-code {
+    width: 120px;
+  }
+  .hidden {
+    display: none !important;
+  }
+
+  .profile-name {
+    background-color: #800080;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .refer-earn,
+  .refer-earn > div {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+  }
+  .refer-earn {
+    row-gap: 30px;
+  }
+  .ref-code2 {
+  }
+  .refer-main {
+  }
+  .refer-info > div {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .refer-instructions > div {
+    width: 100%;
+    height: 72px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .refer-instructions {
+    row-gap: 20px;
+  }
+  .navigation-main span {
+    margin-left: 22%;
+  }
 }
