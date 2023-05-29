@@ -428,3 +428,23 @@ span a {
     margin-left: 22%;
   }
 }
+
+.main-navbar {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+}
+
+.navigation-main {
+  position: fixed;
+  top: 73px;
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+}
+
+.refer-main {
+  margin-top: 150px;
+}
